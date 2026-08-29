@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SURAKSHA AR | Industrial Safety Training</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">🛡️</div>
+
+            <div>
+                <h2>SURAKSHA AR</h2>
+                <span>Safety Training</span>
+            </div>
+        </div>
+
+        <nav>
+            <button class="nav-btn active">🏠 Dashboard</button>
+            <button class="nav-btn">🥽 AR Simulator</button>
+            <button class="nav-btn">⚠️ Hazard Training</button>
+            <button class="nav-btn">🧯 Emergency Drills</button>
+            <button class="nav-btn">📊 My Progress</button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Industrial Safety</p>
+            <strong>Learn • Practice • Protect</strong>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="topbar">
+
+            <div>
+                <p class="small-text">Welcome back, Trainee 👋</p>
+                <h1>Safety Training Dashboard</h1>
+            </div>
+
+            <div class="profile">
+
+                <div class="avatar">A</div>
+
+                <div>
+                    <strong>Safety Trainee</strong>
+                    <small>Level 2</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="tag">
+                    🥽 AR VOCATIONAL TRAINING
+                </span>
+
+                <h2>
+                    Train for danger<br>
+                    before facing it.
+                </h2>
+
+                <p>
+                    Experience realistic industrial safety
+                    situations through Augmented Reality
+                    simulations.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="startSimulation()">
+
+                    ▶ Start AR Simulation
+
+                </button>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="factory-icon">
+                    🏭
+                </div>
+
+                <div class="scan-ring"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <span>🎯</span>
+
+                <div>
+                    <small>Safety Score</small>
+                    <h3 id="score">82%</h3>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>📚</span>
+
+                <div>
+                    <small>Modules Completed</small>
+                    <h3>7 / 10</h3>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🏆</span>
+
+                <div>
+                    <small>Training Level</small>
+                    <h3>Intermediate</h3>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>🔥</span>
+
+                <div>
+                    <small>Training Streak</small>
+                    <h3>6 Days</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODULES -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <h2>Safety Training Modules</h2>
+
+                <p>
+                    Choose a scenario to begin training.
+                </p>
+
+            </div>
+
+
+            <div class="modules">
+
+                <!-- ELECTRICAL -->
+                <div class="module-card">
+
+                    <div class="module-icon danger">
+                        ⚡
+                    </div>
+
+                    <div>
+
+                        <h3>Electrical Safety</h3>
+
+                        <p>
+                            Identify electrical hazards
+                            and unsafe equipment.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="openModule('Electrical Safety')">
+
+                        Start →
+
+                    </button>
+
+                </div>
+
+
+                <!-- FIRE -->
+                <div class="module-card">
+
+                    <div class="module-icon fire">
+                        🔥
+                    </div>
+
+                    <div>
+
+                        <h3>Fire Emergency</h3>
+
+                        <p>
+                            Learn how to respond during
+                            an industrial fire.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="openModule('Fire Emergency')">
+
+                        Start →
+
+                    </button>
+
+                </div>
+
+
+                <!-- CHEMICAL -->
+                <div class="module-card">
+
+                    <div class="module-icon chemical">
+                        ☣️
+                    </div>
+
+                    <div>
+
+                        <h3>Chemical Hazard</h3>
+
+                        <p>
+                            Detect chemical risks and
+                            choose correct PPE.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="openModule('Chemical Hazard')">
+
+                        Start →
+
+                    </button>
+
+                </div>
+
+
+                <!-- MACHINE -->
+                <div class="module-card">
+
+                    <div class="module-icon machine">
+                        ⚙️
+                    </div>
+
+                    <div>
+
+                        <h3>Machine Safety</h3>
+
+                        <p>
+                            Practice safe operation
+                            around machinery.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="openModule('Machine Safety')">
+
+                        Start →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS -->
+        <section class="progress-section">
+
+            <div class="progress-card">
+
+                <div class="progress-header">
+
+                    <div>
+
+                        <h2>Training Progress</h2>
+
+                        <p>
+                            Your journey towards
+                            safety certification.
+                        </p>
+
+                    </div>
+
+                    <strong>70%</strong>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+
+                <div class="progress-info">
+
+                    <span>
+                        7 modules completed
+                    </span>
+
+                    <span>
+                        3 remaining
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                © 2026 SURAKSHA AR •
+                Industrial Safety Training Platform
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                class="close"
+                onclick="closeModal()">
+
+                ×
+
+            </button>
+
+            <div class="modal-icon">
+                🥽
+            </div>
+
+            <h2 id="modalTitle">
+                AR Simulation
+            </h2>
+
+            <p>
+                Your AR safety simulation is ready.
+                Scan the training environment and
+                identify potential hazards.
+            </p>
+
+            <button
+                class="primary-btn"
+                onclick="launchAR()">
+
+                Launch Simulation
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
